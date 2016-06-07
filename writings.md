@@ -13,7 +13,7 @@ permalink: /writings/
 <ul>
 {% assign date = currentdate %}
 {% endif %}
-<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
 </div>
