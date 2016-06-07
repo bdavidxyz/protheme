@@ -7,49 +7,49 @@
 // Config file and project variables
 
 // font sizes
-$base-font-size : 1.05rem !default; // ex. 1.4rem would be "14px" equivalent
-$line-height    : 1.5 !default; // equiv line-height 1.5
-$h1-size        : 2.9rem !default; // equiv "32px"
-$h2-size        : 1.4rem !default; // equiv "28px"
-$h3-size        : 1.2rem !default; // equiv "24px"
-$h4-size        : 1.1rem !default; // equiv "20px"
-$h5-size        : 1rem !default; // equiv "18px"
-$h6-size        : 0.8rem !default; // equiv "16px"
+$base-font-size : 1rem; // ex. 1.4rem would be "14px" equivalent
+$line-height    : 1.5; // equiv line-height 1.5
+$h1-size        : 2.9rem; // equiv "32px"
+$h2-size        : 1.4rem; // equiv "28px"
+$h3-size        : 1.2rem; // equiv "24px"
+$h4-size        : 1.1rem; // equiv "20px"
+$h5-size        : 1rem; // equiv "18px"
+$h6-size        : 0.8rem; // equiv "16px"
 
 // font stacks
-$font-stack-common    : 'Crimson Text', sans-serif !default; // common font
-$font-stack-headings  : 'Source Sans Pro' !default; // headings font
-$font-stack-monospace : consolas, courier, monospace !default; // monospace font
+$font-stack-common    : 'Crimson Text', sans-serif; // common font
+$font-stack-headings  : 'Source Sans Pro'; // headings font
+$font-stack-monospace : consolas, courier, monospace; // monospace font
 
 // font colors
-$base-color             : #363636 !default; // text color on body and content
-$alpha-color            : #000 !default; // text color on primary elements
-$beta-color             : #000 !default; // text color on secondary elements
-$headings-color         : #333 !default; // text color on headings
-$headings-1-color       : #333 !default; // text color on headings level 1
-$headings-2-color       : #333 !default; // text color on headings level 2
-$headings-3-color       : #333 !default; // text color on headings level 3
-$base-color-link        : #333 !default; // base links color
-$base-color-link-hover  : #000 !default; // base hovered/focused links color
+$base-color             : #363636; // text color on body and content
+$alpha-color            : #000; // text color on primary elements
+$beta-color             : #000; // text color on secondary elements
+$headings-color         : #333; // text color on headings
+$headings-1-color       : #333; // text color on headings level 1
+$headings-2-color       : #333; // text color on headings level 2
+$headings-3-color       : #333; // text color on headings level 3
+$base-color-link        : #333; // base links color
+$base-color-link-hover  : #000; // base hovered/focused links color
 
 // backgrounds
-$base-background      : #fff !default; // body background color
-$alpha-background     : #fff !default; // primary elements background color
-$beta-background      : #fff !default; // secondary elements background color
+$base-background      : #fff; // body background color
+$alpha-background     : #fff; // primary elements background color
+$beta-background      : #fff; // secondary elements background color
 
 // spacings (choose unit you prefer)
-$tiny-value             : .5rem !default; // tiny value for margins / paddings
-$tiny-plus-value        : .7rem !default; // tiny+ value for margins / paddings
-$small-value            : 1rem !default; // small value for margins / paddings
-$small-plus-value       : 1.5rem !default; // small+ value for margins / paddings
-$medium-value           : 2rem !default; // medium value for margins / paddings
-$medium-plus-value      : 3rem !default; // medium+ value for margins / paddings
-$large-value            : 4rem !default; // large value for margins / paddings
-$large-plus-value       : 6rem !default; // large value for margins / paddings
-$extra-large-value      : 8rem !default; // extra large value for margins / paddings
-$extra-large-plus-value : 12rem !default; // extra large value for margins / paddings
-$ultra-large-value      : 16rem !default; // ultra large value for margins / paddings
-$ultra-large-plus-value : 20rem !default; // ultra large value for margins / paddings
+$tiny-value             : .5rem; // tiny value for margins / paddings
+$tiny-plus-value        : .7rem; // tiny+ value for margins / paddings
+$small-value            : 1rem; // small value for margins / paddings
+$small-plus-value       : 1.5rem; // small+ value for margins / paddings
+$medium-value           : 2rem; // medium value for margins / paddings
+$medium-plus-value      : 3rem; // medium+ value for margins / paddings
+$large-value            : 4rem; // large value for margins / paddings
+$large-plus-value       : 6rem; // large value for margins / paddings
+$extra-large-value      : 8rem; // extra large value for margins / paddings
+$extra-large-plus-value : 12rem; // extra large value for margins / paddings
+$ultra-large-value      : 16rem; // ultra large value for margins / paddings
+$ultra-large-plus-value : 20rem; // ultra large value for margins / paddings
 
 // breakpoints (overrides include-media.scss) (choose unit you prefer)
 // doc : http://include-media.com/documentation/
@@ -67,17 +67,18 @@ $breakpoints: (
 );
 
 // grids variables (choose unit you prefer)
-$grid-gutter:  2rem !default; // gutter value for grid layouts. Unit can be: %, px, em, rem
-$grid-number:  4 !default; // number of equal columns
-$grid-left:    2 !default; // left side of uneven columns
-$grid-right:   1 !default; // right side of uneven columns
+$grid-gutter:  2rem; // gutter value for grid layouts. Unit can be: %, px, em, rem
+$grid-number:  4; // number of equal columns
+$grid-left:    2; // left side of uneven columns
+$grid-right:   1; // right side of uneven columns
 
 //kna-namespace (default : null)
-$kna-namespace: null !default;
+$kna-namespace: null;
 
 
 @import "knacss";
 
+//responsive typography
 html {
   	font-size: 20px;
   	@include media('>small-screen') {
@@ -85,21 +86,74 @@ html {
     }
 }
 
+// single-direction margin declaration : margin-top wins
+// because when there are many <p>, things are messy
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   line-height: 1.25;
   @extend .mb0;
-  margin-top: 2.5rem;
+  margin-top: $medium-value + $tiny-value;
 }
 
 p {
   @extend .mb0;
 }
 
-
+// one clean column, name is explicit enough
 .wrapper {
-  max-width: 700px;
+  max-width: 750px;
   margin-left:auto;
   margin-right:auto;
   @extend .pas;
+}
+
+// date, author, etc
+.span-metadata {
+  color: #cbd2d6;
+  font-family: $font-stack-headings;
+  font-weight:400;
+  font-size: 0.9rem;
+}
+
+.post-meta {
+  margin-top: $medium-plus-value;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.navbar-brand {
+  font-family: $font-stack-headings;
+  font-weight:600;
+  text-decoration: none;
+  font-size: 1.25rem;
+  letter-spacing: 0.02rem;
+  line-height: 0;
+}
+
+.nav {
+  margin-left: auto;
+  height: 42px;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.nav-item {
+  align-self: center;
+}
+.navbrand {
+  align-self: center;
+}
+
+.nav-link {
+  font-family: $font-stack-headings;
+  font-weight:400;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+  line-height: 0;
 }
