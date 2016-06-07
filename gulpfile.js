@@ -57,7 +57,6 @@ gulp.task('optimize-css', ['jekyll-build'], function () {
         .pipe(gulp.dest('_site/public/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('public/css'))
-        .pipe(notify({ message: 'CSS task complete' }));
 });
 
 
@@ -68,13 +67,11 @@ gulp.task('optimize-js', ['optimize-css'], function() {
     .pipe(gulp.dest('_site/public/js'))
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('public/js'))
-    .pipe(notify({ message: 'JS task complete' }));
 });
 
 gulp.task('optimize-html', ['optimize-js'], function() {
 	return gulp.src('_site/**/*.html')
 		.pipe(gulp.dest('_site/'))
-    .pipe(notify({ message: 'HTML task complete' }));
 });
 
 /**
@@ -119,7 +116,6 @@ gulp.task('optimize-css-prod', ['jekyll-build-prod'], function () {
         .pipe(gulp.dest('_site/public/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('public/css'))
-        .pipe(notify({ message: 'CSS-PROD task complete' }));
 });
 gulp.task('optimize-js-prod', ['optimize-css-prod'], function() {
   return gulp.src('js/*.js')
@@ -128,7 +124,6 @@ gulp.task('optimize-js-prod', ['optimize-css-prod'], function() {
     .pipe(gulp.dest('_site/public/js'))
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('public/js'))
-    .pipe(notify({ message: 'JS-PROD task complete' }));
 });
 gulp.task('optimize-html-prod', ['optimize-js-prod'], function() {
 	return gulp.src('_site/**/*.html')
@@ -144,7 +139,6 @@ gulp.task('optimize-html-prod', ['optimize-js-prod'], function() {
 			return '<script type="text/javascript">' + js_script + '</script>';
 		}))
 		.pipe(gulp.dest('_site/'))
-    .pipe(notify({ message: 'HTML-PROD task complete' }));
 });
 gulp.task('push-to-gh-pages', ['optimize-html-prod'], function() {
   return gulp.src('./_site/**/*')
