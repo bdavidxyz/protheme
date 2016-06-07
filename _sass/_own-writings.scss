@@ -1,0 +1,26 @@
+.writings {
+  h3:first-child {
+    margin-top: 1.5rem;
+  }
+  h3 {
+    font-family: $font-stack-headings;
+    font-weight:600;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 0;
+  }
+  a {
+    text-decoration: none;
+    color:#0076df;
+    transition: color .4s;
+  }  
+  a:hover {
+    text-decoration: none;
+    color:#f92080;
+    transition: color .4s;
+  }
+}

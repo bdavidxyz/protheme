@@ -57,4 +57,7 @@
 
 /* Here should go your own CSS styles */
 // You can also link them with a Sass @import
-// @import "my-styles";
+@import "_own-common.scss";
+@import "_own-navbar.scss";
+@import "_own-post.scss";
+@import "_own-writings.scss";

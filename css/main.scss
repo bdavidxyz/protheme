@@ -30,7 +30,7 @@ $headings-1-color       : #333; // text color on headings level 1
 $headings-2-color       : #333; // text color on headings level 2
 $headings-3-color       : #333; // text color on headings level 3
 $base-color-link        : #333; // base links color
-$base-color-link-hover  : #000; // base hovered/focused links color
+$base-color-link-hover  : #0076df; // base hovered/focused links color
 
 // backgrounds
 $base-background      : #fff; // body background color
@@ -77,83 +77,3 @@ $kna-namespace: null;
 
 
 @import "knacss";
-
-//responsive typography
-html {
-  	font-size: 20px;
-  	@include media('>small-screen') {
-      font-size: 22px;
-    }
-}
-
-// single-direction margin declaration : margin-top wins
-// because when there are many <p>, things are messy
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 900;
-  line-height: 1.25;
-  @extend .mb0;
-  margin-top: $medium-value + $tiny-value;
-}
-
-p {
-  @extend .mb0;
-}
-
-// one clean column, name is explicit enough
-.wrapper {
-  max-width: 750px;
-  margin-left:auto;
-  margin-right:auto;
-  @extend .pas;
-}
-
-// date, author, etc
-.span-metadata {
-  color: #cbd2d6;
-  font-family: $font-stack-headings;
-  font-weight:400;
-  font-size: 0.9rem;
-}
-
-.post-meta {
-  margin-top: $medium-plus-value;
-}
-
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.navbar-brand {
-  font-family: $font-stack-headings;
-  font-weight:600;
-  text-decoration: none;
-  font-size: 1.25rem;
-  letter-spacing: 0.02rem;
-  line-height: 0;
-}
-
-.nav {
-  margin-left: auto;
-  height: 42px;
-}
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.nav-item {
-  align-self: center;
-}
-.navbrand {
-  align-self: center;
-}
-
-.nav-link {
-  font-family: $font-stack-headings;
-  font-weight:400;
-  text-decoration: none;
-  letter-spacing: 0.05rem;
-  line-height: 0;
-}

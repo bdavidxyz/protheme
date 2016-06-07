@@ -1,0 +1,22 @@
+h1.post-title {
+  margin-top: $large-value;
+}
+
+
+p {
+  @extend .mb0;
+}
+
+
+
+// date, author, etc
+.span-metadata {
+  color: #cbd2d6;
+  font-family: $font-stack-headings;
+  font-weight:400;
+  font-size: 0.9rem;
+}
+
+.post-meta {
+  margin-top: $medium-plus-value;
+}
