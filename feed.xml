@@ -4,10 +4,10 @@
     <title>David Boureau</title>
     <description>This is my blog. I write about front-end dev web, and acquisition.
 </description>
-    <link>http://yourdomain.com/protheme/</link>
-    <atom:link href="http://yourdomain.com/protheme/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Jun 2016 18:31:11 +0200</pubDate>
-    <lastBuildDate>Tue, 07 Jun 2016 18:31:11 +0200</lastBuildDate>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 07 Jun 2016 18:45:00 +0200</pubDate>
+    <lastBuildDate>Tue, 07 Jun 2016 18:45:00 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -33,8 +33,8 @@ alert(s);
 &lt;p&gt;Installing Jekyll is easy and straight-forward, but there are a few requirements you’ll need to make sure your system has before you start.&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Jun 2016 15:18:26 +0200</pubDate>
-        <link>http://yourdomain.com/protheme/jekyll/2016/06/02/essay.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/protheme/jekyll/2016/06/02/essay.html</guid>
+        <link>http://yourdomain.com/writings/essay/</link>
+        <guid isPermaLink="true">http://yourdomain.com/writings/essay/</guid>
         
         
         <category>jekyll</category>
@@ -209,8 +209,8 @@ raw Markdown line up prettily. You can also use inline Markdown.&lt;/p&gt;
 &lt;p&gt;Underscores&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 May 2016 15:18:26 +0200</pubDate>
-        <link>http://yourdomain.com/protheme/bootstrap/markdown/2016/05/26/markdown-showcase.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/protheme/bootstrap/markdown/2016/05/26/markdown-showcase.html</guid>
+        <link>http://yourdomain.com/bootstrap/markdown/2016/05/26/markdown-showcase.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/bootstrap/markdown/2016/05/26/markdown-showcase.html</guid>
         
         
         <category>bootstrap</category>
@@ -237,13 +237,412 @@ raw Markdown line up prettily. You can also use inline Markdown.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 26 May 2016 15:18:26 +0200</pubDate>
-        <link>http://yourdomain.com/protheme/jekyll/update/2016/05/26/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/protheme/jekyll/update/2016/05/26/welcome-to-jekyll.html</guid>
+        <link>http://yourdomain.com/jekyll/update/2016/05/26/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/05/26/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>How to name css classes</title>
+        <description>&lt;p&gt;Based on my favorite articles on the topic, and recent work experience, here are my 2 cents about how to properly name CSS classes.&lt;/p&gt;
+
+&lt;h2 id=&quot;before-to-think-about-class-name-give-a-good-name-to-html-elements&quot;&gt;0. Before to think about class name, give a good name to HTML elements&lt;/h2&gt;
+
+&lt;p&gt;If it’s an input, use the &lt;em&gt;input&lt;/em&gt; element.&lt;/p&gt;
+
+&lt;p&gt;It will be far easier for the reader to scan the HTML document.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;submit&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Wooot ? --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;submit&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Ah, ok --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt; : &lt;a href=&quot;https://blog.goetter.fr/2014/11/10/bien-utiliser-un-framework-css/&quot;&gt;Raphael Goetter (french article)&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;put-the-class-name-at-the-lowest-possible-level&quot;&gt;1. Put the class name at the lowest possible level&lt;/h2&gt;
+
+&lt;p&gt;It impact how classes will be named. Always use the class name directly on the HTML element you want to style, even if seems to cost an extra effort.
+Check the article of Chris Coyer below if it is not clear why.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;main&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;mainly&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Lorem ipsum&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- I&#39;d like to style this paragraph--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/main&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.mainly&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* DON&#39;T DO THIS */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* Instead, assign a class name to p : &amp;lt;p class=&#39;paragraphly&#39; /&amp;gt; */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.paragraphly&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt; :  &lt;a href=&quot;https://css-tricks.com/strategies-keeping-css-specificity-low/#article-header-id-3&quot;&gt;Chris Coyer&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;use-content-to-find-a-name&quot;&gt;2. Use content to find a name&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.c-header-logo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* Just by reading the name, I guess this selector targets the logo of the header. */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt; : &lt;a href=&quot;http://www.phpied.com/css-coding-conventions/&quot;&gt;phpied.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;dont-use-content-if-the-picture-speaks-louder&quot;&gt;3. Don’t use content, if the picture speaks louder&lt;/h2&gt;
+
+&lt;p&gt;Let’s say the header logo actually looks like this :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://res.cloudinary.com/toutuncafe/image/upload/c_scale,h_74,w_139/v1463738189/guillotine_cgxbrd.png&quot; alt=&quot;Guillotine&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then don’t call it header-logo.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.guillotine&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* Oh, I see what we are trying to style */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;try--like-suffix-for-better-reuse&quot;&gt;4. Try &lt;em&gt;-like&lt;/em&gt; suffix for better reuse.&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Example :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.h3-like&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;/* some styling */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;h3-title&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!--I am NOT an h3 title, but since designer asked me to look the same,
+      I can&#39;t complain about my classname--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt; :  &lt;a href=&quot;http://bit.ly/27GQhS6&quot;&gt;KNACSS v4&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;dont-use-camelcase&quot;&gt;5. Don’t use camelCase&lt;/h2&gt;
+
+&lt;p&gt;It makes things harder to read.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.navToOneModuleICreated&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;/* versus */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.nav-to-one-module-i-created&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source :&lt;/strong&gt; &lt;a href=&quot;http://csswizardry.com/2010/12/css-camel-case-seriously-sucks/&quot;&gt;Harry Roberts&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;try-bem&quot;&gt;6. Try BEM&lt;/h2&gt;
+
+&lt;p&gt;It’s one of the most commonly used convention by now.
+ - It looks really weird as first glance, don’t be afraid
+ - The entry cost is extremely low
+ - You can try it now on any part of existing project
+ - long term benefits are huge&lt;/p&gt;
+
+&lt;p&gt;(double dash) means variation of the element.
+(double underscore) means children of the element.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;btn btn--warning&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- .btn--warning one of the variation of .btn--&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn__text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- .btn__text one of the child of .btn--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.btn--warning&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;/* Yay ! By convention, I know that code here relate to the variation &quot;warning&quot; of a button, without event looking at the HMTL code. What a relief !*/&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.btn__text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;/* For same reason, I know that this style will target text in a button */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt; :  &lt;a href=&quot;http://blog.kaelig.fr/post/48196348743/fifty-shades-of-bem&quot;&gt;Kaelig,  fifty shades of BEM&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;try-more-uglier&quot;&gt;7. Try more uglier&lt;/h2&gt;
+
+&lt;p&gt;BEM opens new possibilities, even if their conventions looks icky at first glance.&lt;/p&gt;
+
+&lt;p&gt;But very unusual also means that the eye can quickly grab what is actually happening and where, and for BEM, believe me, it works.&lt;/p&gt;
+
+&lt;p&gt;Now you can try more icky convention, as long as you stick to it the whole project.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.DIMENSIONS_OF_mycomponent&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* Ickier is almost impossible. But now it is more clear what it is about.*/&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* I used it for SASS placeholder.*/&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* Don&#39;t abuse of this rule, though.*/&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;use-fully-descriptive-words&quot;&gt;8. Use fully descriptive words&lt;/h2&gt;
+
+&lt;p&gt;Apart from big classics like nav, txt, url… you should avoid any abbreviation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt; : &lt;a href=&quot;http://www.phpied.com/css-coding-conventions/&quot;&gt;phpied.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;try-to-use-only-one-letter-as-a-meaningful-prefix&quot;&gt;9. Try to use only one letter as a meaningful prefix&lt;/h2&gt;
+
+&lt;p&gt;If it’s a visual component, start with c-
+If it’s an object (like layout), start with o-
+I just love this trick from Harry Roberts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;o-layout&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;o-layout-item o-grid c-button&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- When scanning HTML, the eye can quickly differentiate who does what--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt; : &lt;a href=&quot;http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/&quot;&gt;Harry Roberts&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;try--when-too-much-classes-of-a-kind&quot;&gt;10. Try [] when too much classes of a kind&lt;/h2&gt;
+
+&lt;p&gt;This little trick allows you to scan HTML quicker.
+Notice the classes .[ and .] do not exists in your CSS files, it is only here to help others to read your HTML.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;[ o-layout ]&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;[ o-layout-item o-layout-item--first ] c-button&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- When scanning HTML, the eye can quickly differentiate who does what--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt; : &lt;a href=&quot;https://raw.githubusercontent.com/csshugs/inuit-kitchen-sink/v0.4.0/layout.html&quot;&gt;Source code of Inuit Kitchen Sink&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;use-a-js--prefix-if-it-is-only-used-by-javascript&quot;&gt;11. Use a js- prefix if it is only used by javascript&lt;/h2&gt;
+
+&lt;p&gt;If Javascript needs to target an element, don’t make it rely on CSS style.
+Give a dedicated prefix, like js-.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;js-click-me&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- When scanning HTML, I understand that this button has no CSS selector to design it.
+       But, javascript will use it, probably to catch some event.--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source :&lt;/strong&gt; &lt;a href=&quot;https://leanpub.com/marionette-gentle-introduction&quot;&gt;Derick Bailey, marionnetteJS book&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;try-to-separate-parent-from-children&quot;&gt;12. Try to separate parent from children&lt;/h2&gt;
+
+&lt;p&gt;If a class has to many responsibilities, split it into 2 separated properties.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;(bad)&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;a&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- This class below will contain a mix of properties
+       some concerned by a-b relationship
+       some concerned by b-c relationship
+       CSS file is going to be hard to read--&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;child-of-a-and-parent-of-c&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;c&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;(good)&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;a&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Split into 2 classes--&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;child-of-a parent-of-c&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;c&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;unsemantic-classes-should-explicitly-describe-their-properties&quot;&gt;13. Unsemantic classes should explicitly describe their properties&lt;/h2&gt;
+
+&lt;p&gt;Most of them contain only one property, there are no value in hiding what that is.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;nc&quot;&gt;.horizontal-alignment&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* Don&#39;t do this. Horizontal alignment can be achieved in many way, when scanning this selector in HTML file, we have no clue about HOW it is achieved. */&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;/* Prefer this one. Using BEM, and a one-character prefix, see above */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.u-text-align--center&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;explicit-hacks-i&quot;&gt;14. Explicit hacks (I)&lt;/h2&gt;
+
+&lt;p&gt;If you’re not happy with your CSS selector, say it to everybody.&lt;/p&gt;
+
+&lt;p&gt;It will happen anyway, even to the best CSSuper(wo)men, so don’t be ashamed of it.&lt;/p&gt;
+
+&lt;p&gt;In your team, find a word that will be used for such cases, document it, and stick to it all along the lifetime of your project.&lt;/p&gt;
+
+&lt;p&gt;For us, Atom IDE automatically highlight the word “HACK” so I used it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;nc&quot;&gt;.my-component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-7px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* HACK here : magic number, here to compensate gutter */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;explicit-hacks-ii&quot;&gt;15. Explicit hacks (II)&lt;/h2&gt;
+
+&lt;p&gt;Another valuable option is to put every weird code into a dedicated file, named &lt;strong&gt;shame.css&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Again, Harry Roberts come to the rescue.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Source :&lt;/strong&gt; &lt;a href=&quot;http://csswizardry.com/2013/04/shame-css/&quot;&gt;Harry Roberts&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;try-to-avoid-more-than-two-words-for-a-given-name&quot;&gt;16. Try to avoid more than two words for a given name&lt;/h2&gt;
+
+&lt;p&gt;The name must be self-descriptive in one or two words, or code will be hard to maintain.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.button&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* OK */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.dropdown-button&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* still OK */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.dropdown-button-part-one&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* Hmm, still ok, but will be unredable when adding children, for ex : */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.dropdown-button-part-one__button-admin&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* Yikes !!! */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;use-data-state-attribute-to-specify-state-of-your-component&quot;&gt;17. Use data-state attribute to specify state of your component&lt;/h2&gt;
+
+&lt;p&gt;State manipulation happens very often.
+It happens so frequently that give the state a dedicated attribute saves times and effort over the long term.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;c-button c-button--warning is-active&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Don&#39;t do this--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;c-button c-button--warning&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-state=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;is-active&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- That&#39;s better.
+  I removed a class declaration,
+  it enforces the one-state-rule,
+  and for those who use SASS, it makes code cleaner.--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source :&lt;/strong&gt; Unfortunately, I can’t remember who wrote about this, but his advice was very helpful.&lt;/p&gt;
+
+&lt;h2 id=&quot;use-has--or-is--prefix-for-the-state&quot;&gt;18. Use has- or is- prefix for the state&lt;/h2&gt;
+
+&lt;p&gt;State manipulation happens very often. (bis)
+So adhere to a strict naming convention for the state will be very helpful&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.activated&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* Don&#39;t do this.  I&#39;m not quite sure what you are talking about ?*/&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.is-activated&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* Yes, you&#39;re styling a state. */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source :&lt;/strong&gt; &lt;a href=&quot;https://github.com/mobify/mobify-code-style/tree/master/css/class-naming-conventions#state&quot;&gt;Mobify code style&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;use-a-dash-as-a-prefix-when-combining-multiple-state&quot;&gt;19. Use a dash as a prefix when combining multiple state&lt;/h2&gt;
+
+&lt;p&gt;You should do everything you can to avoid state combination.
+But, when it is not possible, you can use this very helpful trick from Ben Smithett.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn -color-red -size-large -shape-round&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source :&lt;/strong&gt; &lt;a href=&quot;https://www.bensmithett.com/bem-modifiers-multiple-classes-vs-extend/&quot;&gt;Ben Smithett&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;try-single-quote-instead-of-double-quote-when-declaring-selector-in-html&quot;&gt;20. Try single quote instead of double quote when declaring selector in HTML&lt;/h2&gt;
+
+&lt;p&gt;It reduces noise a lot when reading the document.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;c-button&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- BAD EXAMPLE : it uses &quot; instead of &#39;. Not a big deal on this tiny example, but when you deal with hundreds of selector in a HTML file, single quote is a better idea.--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;c-button&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good !--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Source :&lt;/strong&gt; I learned it when I worked with the &lt;a href=&quot;http://www.predicsis.com/team/&quot;&gt;Predicsis team&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;dont-follow-rules&quot;&gt;21. Don’t follow rules&lt;/h2&gt;
+
+&lt;p&gt;I tried to give you some guidelines based on my own experience, and articles that helped me the most.&lt;/p&gt;
+
+&lt;p&gt;I doesn’t mean everything will work for you, so my best advice is :&lt;/p&gt;
+
+&lt;p&gt;1) Try to improve your naming,
+2) keep it consistent for a given project,
+3) but avoid over-engineering.&lt;/p&gt;
+
+&lt;p&gt;If you don’t feel comfortable, just skip it.&lt;/p&gt;
+
+&lt;p&gt;Enjoy !&lt;/p&gt;
+</description>
+        <pubDate>Wed, 18 May 2016 00:00:00 +0200</pubDate>
+        <link>http://yourdomain.com/writings/how-to-name-css-classes/</link>
+        <guid isPermaLink="true">http://yourdomain.com/writings/how-to-name-css-classes/</guid>
+        
+        
+        <category>jekyll</category>
         
       </item>
     
