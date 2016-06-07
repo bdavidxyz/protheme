@@ -6,13 +6,23 @@
 </description>
     <link>http://yourdomain.com/protheme/</link>
     <atom:link href="http://yourdomain.com/protheme/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Jun 2016 17:45:18 +0200</pubDate>
-    <lastBuildDate>Tue, 07 Jun 2016 17:45:18 +0200</lastBuildDate>
+    <pubDate>Tue, 07 Jun 2016 18:27:51 +0200</pubDate>
+    <lastBuildDate>Tue, 07 Jun 2016 18:27:51 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Install Jekyll on Mac OS X</title>
-        <description>&lt;p&gt;I was looking for a tool that can build websites that are fast, simple and secure. These websites needed to be static because I didn’t want to deal with databases or a content management system (CMS) like WordPress or Ghost. After a lot of thought I decided to use Jekyll.&lt;/p&gt;
+        <description>&lt;p&gt;Inline &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; has &lt;code class=&quot;highlighter-rouge&quot;&gt;back-ticks around&lt;/code&gt; it.&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code class=&quot;javascript&quot;&gt;
+var s = &quot;JavaScript syntax highlighting&quot;;
+alert(s);
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;I was looking for a tool that can build websites that are fast, simple and secure. These websites needed to be static because I didn’t want to deal with databases or a content management system (CMS) like WordPress or Ghost. After a lot of thought I decided to use Jekyll.&lt;/p&gt;
 
 &lt;h2 id=&quot;so-what-is-jekyll&quot;&gt;So what is Jekyll?&lt;/h2&gt;
 &lt;p&gt;Jekyll is a tool for transforming your plain text into static websites and blogs. It is simple, static, and blog-aware. Jekyll uses the Liquid templating language and has builtin Markdown and Textile support. It also ties in nicely to Github Pages so you have the option to host your website for free. You can learn more about Jekyll on their website.&lt;/p&gt;
