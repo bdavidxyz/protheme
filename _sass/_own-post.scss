@@ -22,8 +22,28 @@ p {
 }
 
 .post {
-  code {
-    font-size: 0.8rem;
+  pre {
     background-color:#f7f7f7;
   }
+  code {
+    font-size: 0.7rem;
+  }
+  a {
+    text-decoration: none;
+    color:#0076df;
+    transition: color .4s;
+  }  
+  a:hover {
+    text-decoration: none;
+    color:#f92080;
+    transition: color .4s;
+  }
+}
+
+.highlighter-rouge {
+  @extend .mts;
+}
+
+p + .highlighter-rouge {
+  margin-top: 0.5rem;
 }

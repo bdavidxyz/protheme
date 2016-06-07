@@ -61,4 +61,8 @@
 @import "_own-navbar.scss";
 @import "_own-post.scss";
 @import "_own-writings.scss";
-@import "_z-idea.scss";
+@import "_own-highlighter.scss";
+
+pre {
+  font-family: 'Source Code Pro'
+}
