@@ -1,2 +1,2 @@
 console.log('Loading highlightjs');
-hljs.initHighlightingOnLoad();
+//hljs.initHighlightingOnLoad();

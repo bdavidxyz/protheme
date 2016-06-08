@@ -1306,7 +1306,7 @@ ul.unstyled {
 .mt0 {
   margin-top: 0; }
 
-.mts {
+.mts, .highlighter-rouge {
   margin-top: 1rem; }
 
 .mtm {
@@ -1732,7 +1732,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   line-height: 1.25;
-  margin-top: 2.5rem; }
+  margin-top: 3rem; }
 
 a:hover {
   transition: color 0.4s; }
@@ -1792,9 +1792,21 @@ h1.post-title {
 .post-meta {
   margin-top: 3rem; }
 
-.post code {
-  font-size: 0.8rem;
+.post pre {
   background-color: #f7f7f7; }
+.post code {
+  font-size: 0.7rem; }
+.post a {
+  text-decoration: none;
+  color: #0076df;
+  transition: color .4s; }
+.post a:hover {
+  text-decoration: none;
+  color: #f92080;
+  transition: color .4s; }
+
+p + .highlighter-rouge {
+  margin-top: 0.5rem; }
 
 .writings h3:first-child {
   margin-top: 1.5rem; }
@@ -1816,83 +1828,108 @@ h1.post-title {
   color: #f92080;
   transition: color .4s; }
 
-/*
+/**
+ * GHColors theme by Avi Aryan (http://aviaryan.in)
+ * Inspired by Github syntax coloring
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #393A34;
+  font-family: "Source Code Pro", "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  font-size: 0.75rem;
+  line-height: 1.2em;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
 
-Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  background: #b3d4fc; }
 
-*/
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  color: #000;
-  background: #fff; }
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background: #b3d4fc; }
 
-.hljs-subst,
-.hljs-title {
-  font-weight: normal;
-  color: #000; }
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border: 1px solid #dddddd;
+  border-radius: 7px;
+  background-color: #f7f7f7; }
 
-.hljs-comment,
-.hljs-quote {
-  color: #808080;
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .2em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background: #f8f8f8;
+  border: 1px solid #dddddd; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #999988;
   font-style: italic; }
 
-.hljs-meta {
-  color: #808000; }
+.token.namespace {
+  opacity: .7; }
 
-.hljs-tag {
-  background: #efefef; }
+.token.string,
+.token.attr-value {
+  color: #e3116c; }
 
-.hljs-section,
-.hljs-name,
-.hljs-literal,
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-type,
-.hljs-selector-id,
-.hljs-selector-class {
-  font-weight: bold;
-  color: #000080; }
+.token.punctuation,
+.token.operator {
+  color: #393A34;
+  /* no highlight */ }
 
-.hljs-attribute,
-.hljs-number,
-.hljs-regexp,
-.hljs-link {
-  font-weight: bold;
-  color: #0000ff; }
+.token.entity,
+.token.url,
+.token.symbol,
+.token.number,
+.token.boolean,
+.token.variable,
+.token.constant,
+.token.property,
+.token.regex,
+.token.inserted {
+  color: #36acaa; }
 
-.hljs-number,
-.hljs-regexp,
-.hljs-link {
-  font-weight: normal; }
+.token.atrule,
+.token.keyword,
+.token.attr-name,
+.language-autohotkey .token.selector {
+  color: #00a4db; }
 
-.hljs-string {
-  color: #008000;
+.token.function,
+.token.deleted,
+.language-autohotkey .token.tag {
+  color: #9a050f; }
+
+.token.tag,
+.token.selector,
+.language-autohotkey .token.keyword {
+  color: #00009f; }
+
+.token.important,
+.token.function,
+.token.bold {
   font-weight: bold; }
 
-.hljs-symbol,
-.hljs-bullet,
-.hljs-formula {
-  color: #000;
-  background: #d0eded;
+.token.italic {
   font-style: italic; }
 
-.hljs-doctag {
-  text-decoration: underline; }
-
-.hljs-variable,
-.hljs-template-variable {
-  color: #660e7a; }
-
-.hljs-addition {
-  background: #baeeba; }
-
-.hljs-deletion {
-  background: #ffc8bd; }
-
-.hljs-emphasis {
-  font-style: italic; }
-
-.hljs-strong {
-  font-weight: bold; }
+pre {
+  font-family: "Source Code Pro"; }
