@@ -1745,6 +1745,9 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
+pre {
+  font-family: "Source Code Pro"; }
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -1781,7 +1784,7 @@ a {
   line-height: 0; }
 
 h1.post-title {
-  margin-top: 4rem; }
+  margin-top: 2rem; }
 
 .span-metadata {
   color: #cbd2d6;
@@ -1792,6 +1795,8 @@ h1.post-title {
 .post-meta {
   margin-top: 3rem; }
 
+.post h1 + p {
+  margin-top: 1.5rem; }
 .post pre {
   background-color: #f7f7f7; }
 .post code {
@@ -1931,5 +1936,18 @@ pre[class*="language-"] {
 .token.italic {
   font-style: italic; }
 
-pre {
-  font-family: "Source Code Pro"; }
+.about :first-child {
+  margin-top: 1.5rem; }
+
+.home a {
+  text-decoration: none;
+  color: #0076df;
+  transition: color .4s; }
+.home a:hover {
+  text-decoration: none;
+  color: #f92080;
+  transition: color .4s; }
+
+.footer hr {
+  margin: 0;
+  margin-top: 3rem; }

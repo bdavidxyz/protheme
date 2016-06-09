@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Jun 2016 15:20:58 +0200</pubDate>
-    <lastBuildDate>Wed, 08 Jun 2016 15:20:58 +0200</lastBuildDate>
+    <pubDate>Thu, 09 Jun 2016 12:19:01 +0200</pubDate>
+    <lastBuildDate>Thu, 09 Jun 2016 12:19:01 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -251,7 +251,7 @@ raw Markdown line up prettily. You can also use inline Markdown.&lt;/p&gt;
         <title>How to name css classes</title>
         <description>&lt;p&gt;Based on my favorite articles on the topic, and recent work experience, here are my 2 cents about how to properly name CSS classes.&lt;/p&gt;
 
-&lt;h2 id=&quot;before-to-think-about-class-name-give-a-good-name-to-html-elements&quot;&gt;0. Before to think about class name, give a good name to HTML elements&lt;/h2&gt;
+&lt;h2 id=&quot;before-to-think-about-class-name-choose-a-good-name-for-html-elements&quot;&gt;0. Before to think about class name, choose a good name for HTML elements&lt;/h2&gt;
 
 &lt;p&gt;If it’s an input, use the &lt;em&gt;input&lt;/em&gt; element.&lt;/p&gt;
 
@@ -271,7 +271,7 @@ raw Markdown line up prettily. You can also use inline Markdown.&lt;/p&gt;
 
 &lt;h2 id=&quot;put-the-class-name-at-the-lowest-possible-level&quot;&gt;1. Put the class name at the lowest possible level&lt;/h2&gt;
 
-&lt;p&gt;It impact how classes will be named. Always use the class name directly on the HTML element you want to style, even if seems to cost an extra effort.
+&lt;p&gt;It impacts how classes will be named. Always use the class name directly on the HTML element you want to style, even if seems to cost an extra effort.
 Check the article of Chris Coyer below if it is not clear why.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Example :&lt;/strong&gt;&lt;/p&gt;
@@ -357,11 +357,14 @@ Check the article of Chris Coyer below if it is not clear why.&lt;/p&gt;
 
 &lt;h2 id=&quot;try-bem&quot;&gt;6. Try BEM&lt;/h2&gt;
 
-&lt;p&gt;It’s one of the most commonly used convention by now.
- - It looks really weird as first glance, don’t be afraid
- - The entry cost is extremely low
- - You can try it now on any part of existing project
- - long term benefits are huge&lt;/p&gt;
+&lt;p&gt;It’s one of the most commonly used convention by now.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It looks really weird as first glance, don’t be afraid&lt;/li&gt;
+  &lt;li&gt;The entry cost is extremely low&lt;/li&gt;
+  &lt;li&gt;You can try it now on any part of existing project&lt;/li&gt;
+  &lt;li&gt;Long term benefits are huge&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;(double dash) means variation of the element.
 (double underscore) means children of the element.&lt;/p&gt;
@@ -383,6 +386,8 @@ Check the article of Chris Coyer below if it is not clear why.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt; :  &lt;a href=&quot;http://blog.kaelig.fr/post/48196348743/fifty-shades-of-bem&quot;&gt;Kaelig,  fifty shades of BEM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Recommended&lt;/strong&gt; :  &lt;a href=&quot;https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/&quot;&gt;Smashing Magazine, Battling BEM&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;try-more-uglier&quot;&gt;7. Try more uglier&lt;/h2&gt;
 
@@ -425,7 +430,7 @@ I just love this trick from Harry Roberts.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt; : &lt;a href=&quot;http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/&quot;&gt;Harry Roberts&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;try--when-too-much-classes-of-a-kind&quot;&gt;10. Try [] when too much classes of a kind&lt;/h2&gt;
+&lt;h2 id=&quot;try--when-too-many-classes-of-a-kind&quot;&gt;10. Try [] when too many classes of a kind&lt;/h2&gt;
 
 &lt;p&gt;This little trick allows you to scan HTML quicker.
 Notice the classes .[ and .] do not exists in your CSS files, it is only here to help others to read your HTML.&lt;/p&gt;
@@ -441,7 +446,7 @@ Notice the classes .[ and .] do not exists in your CSS files, it is only here to
 
 &lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt; : &lt;a href=&quot;https://raw.githubusercontent.com/csshugs/inuit-kitchen-sink/v0.4.0/layout.html&quot;&gt;Source code of Inuit Kitchen Sink&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;use-a-js--prefix-if-it-is-only-used-by-javascript&quot;&gt;11. Use a js- prefix if it is only used by javascript&lt;/h2&gt;
+&lt;h2 id=&quot;use-a-js--prefix-if-it-is-only-used-by-javascript&quot;&gt;11. Use a js- prefix if it is only used by JavaScript&lt;/h2&gt;
 
 &lt;p&gt;If Javascript needs to target an element, don’t make it rely on CSS style.
 Give a dedicated prefix, like js-.&lt;/p&gt;
@@ -450,12 +455,13 @@ Give a dedicated prefix, like js-.&lt;/p&gt;
 
 &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;js-click-me&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- When scanning HTML, I understand that this button has no CSS selector to design it.
-       But, javascript will use it, probably to catch some event.--&amp;gt;&lt;/span&gt;
+       But, JavaScript will use it, probably to catch some event.--&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Source :&lt;/strong&gt; &lt;a href=&quot;https://leanpub.com/marionette-gentle-introduction&quot;&gt;Derick Bailey, marionnetteJS book&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Source :&lt;/strong&gt; &lt;a href=&quot;https://leanpub.com/marionette-gentle-introduction&quot;&gt;Derick Bailey, marion
+netteJS book&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;try-to-separate-parent-from-children&quot;&gt;12. Try to separate parent from children&lt;/h2&gt;
 
@@ -495,7 +501,7 @@ Give a dedicated prefix, like js-.&lt;/p&gt;
 &lt;p&gt;Most of them contain only one property, there are no value in hiding what that is.&lt;/p&gt;
 
 &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;nc&quot;&gt;.horizontal-alignment&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* Don&#39;t do this. Horizontal alignment can be achieved in many way, when scanning this selector in HTML file, we have no clue about HOW it is achieved. */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.horizontal-alignment&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* Don&#39;t do this. Horizontal alignment can be achieved in many ways, when scanning this selector in HTML file, we have no clue about HOW it is achieved. */&lt;/span&gt;
   &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;/* Prefer this one. Using BEM, and a one-character prefix, see above */&lt;/span&gt;
@@ -568,7 +574,7 @@ It happens so frequently that give the state a dedicated attribute saves times a
   &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- That&#39;s better.
   I removed a class declaration,
   it enforces the one-state-rule,
-  and for those who use SASS, it makes code cleaner.--&amp;gt;&lt;/span&gt;
+  and for those who use Sass, it makes code cleaner.--&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -636,6 +642,8 @@ But, when it is not possible, you can use this very helpful trick from Ben Smith
 &lt;p&gt;If you don’t feel comfortable, just skip it.&lt;/p&gt;
 
 &lt;p&gt;Enjoy !&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Special thanks to &lt;a href=&quot;https://twitter.com/HugoGiraudel&quot;&gt;@HugoGiraudel&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/kaelig&quot;&gt;@kaelig&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/gaetanbt&quot;&gt;@gaetanbt&lt;/a&gt; for their reviews&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 May 2016 00:00:00 +0200</pubDate>
         <link>http://yourdomain.com/writings/how-to-name-css-classes/</link>
