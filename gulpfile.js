@@ -53,7 +53,12 @@ gulp.task('browser-sync', ['optimize-html'], function() {
 gulp.task('optimize-css', ['jekyll-build'], function () {
     return gulp.src('_site/css/main.css')
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        // .pipe(uncss({
+        //    html: ['_site/**/*.html'],
+        //    ignore: []
+        // }))
         .pipe(rename('all.min.css'))
+        .pipe(minifyCSS())
         .pipe(gulp.dest('_site/public/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('public/css'))
@@ -108,10 +113,10 @@ gulp.task('jekyll-build-prod', function (done) {
 gulp.task('optimize-css-prod', ['jekyll-build-prod'], function () {
     return gulp.src('_site/css/main.css')
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(uncss({
-           html: ['_site/**/*.html'],
-           ignore: []
-       }))
+        // .pipe(uncss({
+        //    html: ['_site/**/*.html'],
+        //    ignore: []
+        // }))
         .pipe(rename('all.min.css'))
         .pipe(minifyCSS())
         .pipe(gulp.dest('_site/public/css'))
