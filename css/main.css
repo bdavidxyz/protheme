@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*!
+/*
 * www.KNACSS.com V5.0.0 (23 mai 2016) @author: Raphael Goetter, Alsacreations
 * Licence WTFPL http://www.wtfpl.net/
 */
@@ -1784,7 +1784,7 @@ pre {
   line-height: 0; }
 
 h1.post-title {
-  margin-top: 2rem; }
+  margin-top: 3rem; }
 
 .span-metadata {
   color: #cbd2d6;
