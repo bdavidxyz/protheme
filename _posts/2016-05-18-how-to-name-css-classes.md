@@ -12,7 +12,7 @@ permalink: /writings/:title/
 Based on my favorite articles on the topic, and recent work experience, here are my 2 cents about how to properly name CSS classes.
 
 
-## 0. Before to think about class name, give a good name to HTML elements
+## 0. Before to think about class name, choose a good name for HTML elements
 
 If it's an input, use the _input_ element.
 
@@ -32,7 +32,7 @@ It will be far easier for the reader to scan the HTML document.
 
 ## 1. Put the class name at the lowest possible level
 
-It impact how classes will be named. Always use the class name directly on the HTML element you want to style, even if seems to cost an extra effort.
+It impacts how classes will be named. Always use the class name directly on the HTML element you want to style, even if seems to cost an extra effort.
 Check the article of Chris Coyer below if it is not clear why.
 
 **Example :**
@@ -131,10 +131,11 @@ It makes things harder to read.
 ## 6. Try BEM
 
 It's one of the most commonly used convention by now.
- - It looks really weird as first glance, don't be afraid
- - The entry cost is extremely low
- - You can try it now on any part of existing project
- - long term benefits are huge
+
+* It looks really weird as first glance, don't be afraid
+* The entry cost is extremely low
+* You can try it now on any part of existing project
+* Long term benefits are huge
 
 (double dash) means variation of the element.
 (double underscore) means children of the element.
@@ -157,6 +158,8 @@ It's one of the most commonly used convention by now.
 ```
 
 **Source** :  [Kaelig,  fifty shades of BEM](http://blog.kaelig.fr/post/48196348743/fifty-shades-of-bem)
+
+**Recommended** :  [Smashing Magazine, Battling BEM](https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/)
 
 
 ## 7. Try more uglier
@@ -203,7 +206,7 @@ I just love this trick from Harry Roberts.
 
 **Source** : [Harry Roberts](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/)
 
-## 10. Try [] when too much classes of a kind
+## 10. Try [] when too many classes of a kind
 
 This little trick allows you to scan HTML quicker.
 Notice the classes .[ and .] do not exists in your CSS files, it is only here to help others to read your HTML.
@@ -223,7 +226,7 @@ Notice the classes .[ and .] do not exists in your CSS files, it is only here to
 
 
 
-## 11. Use a js- prefix if it is only used by javascript
+## 11. Use a js- prefix if it is only used by JavaScript
 
 If Javascript needs to target an element, don't make it rely on CSS style.
 Give a dedicated prefix, like js-.
@@ -233,11 +236,12 @@ Give a dedicated prefix, like js-.
 ```html
 <button class='js-click-me'>
   <!-- When scanning HTML, I understand that this button has no CSS selector to design it.
-       But, javascript will use it, probably to catch some event.-->
+       But, JavaScript will use it, probably to catch some event.-->
 </button>
 ```
 
-**Source :** [Derick Bailey, marionnetteJS book](https://leanpub.com/marionette-gentle-introduction)
+**Source :** [Derick Bailey, marion
+netteJS book](https://leanpub.com/marionette-gentle-introduction)
 
 
 
@@ -285,7 +289,7 @@ Most of them contain only one property, there are no value in hiding what that i
 
 ```css
 
-.horizontal-alignment { /* Don't do this. Horizontal alignment can be achieved in many way, when scanning this selector in HTML file, we have no clue about HOW it is achieved. */
+.horizontal-alignment { /* Don't do this. Horizontal alignment can be achieved in many ways, when scanning this selector in HTML file, we have no clue about HOW it is achieved. */
   text-align: center;
 }
 /* Prefer this one. Using BEM, and a one-character prefix, see above */
@@ -364,7 +368,7 @@ It happens so frequently that give the state a dedicated attribute saves times a
   <!-- That's better.
   I removed a class declaration,
   it enforces the one-state-rule,
-  and for those who use SASS, it makes code cleaner.-->
+  and for those who use Sass, it makes code cleaner.-->
 </button>
 ```
 
@@ -436,3 +440,5 @@ I doesn't mean everything will work for you, so my best advice is :
 If you don't feel comfortable, just skip it.
 
 Enjoy !
+
+_Special thanks to [@HugoGiraudel](https://twitter.com/HugoGiraudel), [@kaelig](https://twitter.com/kaelig), and [@gaetanbt](https://twitter.com/gaetanbt) for their reviews_

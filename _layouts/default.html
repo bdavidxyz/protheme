@@ -12,7 +12,9 @@
           {{ content }}
         </div>
       </div>
-      {% include footer.html %}
+      {% if page.url != '/' %}
+        {% include footer.html %}
+      {% endif %}
     </div>
 
     <script src="{{'/public/js/all.min.js'}}"></script>
