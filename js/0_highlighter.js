@@ -1,4 +1,5 @@
-/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
+document.addEventListener("DOMContentLoaded", function(event) { 
+  /* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
 var _self = (typeof window !== 'undefined')
   ? window   // if in browser
   : (
@@ -673,3 +674,5 @@ if (Prism.languages.markup) {
 }
 
 Prism.languages.js = Prism.languages.javascript;
+
+});
