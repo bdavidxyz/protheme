@@ -6,7 +6,7 @@ permalink: /writings/
 
 <div class="writings">
 {% for post in site.posts %}
-{% assign currentdate = post.date | date: "%B %Y" %}
+{% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}
 {% unless forloop.first %}</ul>{% endunless %}
 <h3 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h3>

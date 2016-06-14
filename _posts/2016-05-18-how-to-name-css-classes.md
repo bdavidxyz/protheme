@@ -4,7 +4,7 @@ author: David Boureau
 minread: 11
 title:  "How to name css classes"
 date:   2016-05-18
-categories: jekyll
+categories: css
 permalink: /:title/
 ---
 
