@@ -2001,3 +2001,14 @@ pre[class*="language-"] {
 .footer hr {
   margin: 0;
   margin-top: 3rem; }
+.footer svg {
+  width: 30px;
+  height: 30px; }
+.footer a {
+  text-decoration: none;
+  color: #0076df;
+  transition: color .4s; }
+.footer a:hover {
+  text-decoration: none;
+  color: #f92080;
+  transition: color .4s; }
