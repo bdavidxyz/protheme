@@ -5,7 +5,7 @@
 
   <body>
 
-    <div class="container">
+    <div class="container blabla">
       {% include header.html %}
       <div class="page-content">
         <div class="wrapper">
@@ -17,8 +17,11 @@
       {% endif %}
     </div>
 
-    <script src="{{'/public/js/all.min.js'}}"></script>
-    {% include google_analytics.html %}
+    <!--startjs-->
+    {% include js-requestanimationframe.html %}
+    {% include js-google_analytics.html %}
+    {% include js-highlighter.html %}
+    <!--endjs-->
   </body>
 
 </html>

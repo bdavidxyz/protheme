@@ -1,9 +1,9 @@
 {
-  "name": "jekyll-bootstrap4",
+  "name": "protheme",
   "version": "0.0.0",
-  "description": "A starter project based on impatient-jekyll, integrating bootstrap4 into jekyll3",
+  "description": "my personal theme",
   "main": "gulpfile.js",
-  "engines" : { "node" : "~4.1.2", "npm":"~3.7.5" },
+  "engines" : { "node" : "~5.11.1", "npm":"~3.8.6" },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidb583/jekyll-bootstrap4.git"
+    "url": "https://github.com/bdavidxyz/protheme.git"
   },
   "keywords": [
     "jekyll",
@@ -38,5 +38,5 @@
     "github",
     "googlepagespeed"
   ],
-  "homepage": "https://github.com/davidb583/jekyll-bootstrap4/"
+  "homepage": "http://bdavidxyz.com/"
 }
