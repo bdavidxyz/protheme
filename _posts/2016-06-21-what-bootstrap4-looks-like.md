@@ -59,3 +59,8 @@ For Bootstrap 3 the job has been done many times, see [this Stackoverflow questi
 There are no comments (yet) on this website, maybe the next time :)
 
 Enjoy !
+<p>&nbsp;</p>
+<div class="u-htube u-htube--center">
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">What <a href="https://twitter.com/hashtag/Bootstrap?src=hash">#Bootstrap</a> 4 looks like <a href="https://t.co/WY4D2hQNNv">https://t.co/WY4D2hQNNv</a> <a href="https://twitter.com/hashtag/css?src=hash">#css</a> <a href="https://twitter.com/hashtag/webdesign?src=hash">#webdesign</a></p>&mdash; David Boureau (@bdavidxyz) <a href="https://twitter.com/bdavidxyz/status/745917309747924992">June 23, 2016</a></blockquote>
+</div>
+
