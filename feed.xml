@@ -6,9 +6,71 @@
 </description>
     <link>http://bdavidxyz.com/</link>
     <atom:link href="http://bdavidxyz.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 14 Jun 2016 15:07:08 +0200</pubDate>
-    <lastBuildDate>Tue, 14 Jun 2016 15:07:08 +0200</lastBuildDate>
+    <pubDate>Thu, 23 Jun 2016 11:51:01 +0200</pubDate>
+    <lastBuildDate>Thu, 23 Jun 2016 11:51:01 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>What BS4 looks like</title>
+        <description>&lt;p&gt;Here is a giant collection of all visual elements, extracted from Bootstrap 4 docs.&lt;/p&gt;
+
+&lt;p&gt;If you like this short article, share it :&lt;/p&gt;
+
+&lt;div&gt;
+
+&lt;a href=&quot;https://news.ycombinator.com/submit&quot; class=&quot;hn-button&quot; data-title=&quot;What Bootstrap 4 looks like&quot; data-url=&quot;http://bdavidxyz.com/blog/what-bootstrap4-looks-like&quot; data-style=&quot;facebook&quot;&gt;Vote on Hacker News&lt;/a&gt;
+&lt;a href=&quot;https://twitter.com/share&quot; class=&quot;twitter-share-button&quot; data-text=&quot;What Bootstrap 4 looks like&quot; data-via=&quot;bdavidxyz&quot;&gt;Tweet&lt;/a&gt; 
+&lt;a href=&quot;//www.reddit.com/submit&quot; onclick=&quot;window.location = &#39;//www.reddit.com/submit?url=&#39; + encodeURIComponent(window.location); return false&quot;&gt; &lt;img src=&quot;//www.redditstatic.com/spreddit10.gif&quot; alt=&quot;submit to reddit&quot; border=&quot;0&quot; style=&quot;width:80px;margin-top:-10px&quot; /&gt; &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you don’t like it, say it :&lt;/p&gt;
+
+&lt;div&gt;
+
+&lt;a href=&quot;https://news.ycombinator.com/submit&quot; class=&quot;hn-button&quot; data-title=&quot;What Bootstrap 4 looks like&quot; data-url=&quot;http://bdavidxyz.com/blog/what-bootstrap4-looks-like&quot; data-style=&quot;facebook&quot;&gt;Vote on Hacker News&lt;/a&gt;
+&lt;a href=&quot;https://twitter.com/share&quot; class=&quot;twitter-share-button&quot; data-text=&quot;What Bootstrap 4 looks like&quot; data-via=&quot;bdavidxyz&quot;&gt;Tweet&lt;/a&gt; 
+&lt;a href=&quot;//www.reddit.com/submit&quot; onclick=&quot;window.location = &#39;//www.reddit.com/submit?url=&#39; + encodeURIComponent(window.location); return false&quot;&gt; &lt;img src=&quot;//www.redditstatic.com/spreddit10.gif&quot; alt=&quot;submit to reddit&quot; border=&quot;0&quot; style=&quot;width:80px;margin-top:-10px&quot; /&gt; &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;short-version&quot;&gt;Short version&lt;/h2&gt;
+
+&lt;p&gt;The giant asset page is here : &lt;a href=&quot;http://bdavidxyz.github.io/yourown-bootstrap4/all.html&quot;&gt;http://bdavidxyz.github.io/yourown-bootstrap4/all.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;long-version&quot;&gt;Long version&lt;/h2&gt;
+
+&lt;p&gt;I’m creating your &lt;a href=&quot;https://github.com/bdavidxyz/yourown-bootstrap4&quot;&gt;yourown-bootstrap4&lt;/a&gt;, an work-in-progress open-source project that will allow you to create your own bootstrap 4 theme “the right way” : it will give you a fast local workflow, an optimised, fast rendering once in production, a good documentation so that will focus on design, not technical details. And, finally, a way to visually check how your whole bootstrap distribution will look like : a big collection of all visual elements, extracted from Bootstrap 4 docs, that cover every corner cases.&lt;/p&gt;
+
+&lt;p&gt;You can also think about it as an automatic style guide for your own theme.&lt;/p&gt;
+
+&lt;p&gt;This task is done, even if the whole job is not.&lt;/p&gt;
+
+&lt;p&gt;I presume the impatients will be happy to see what the new Bootstrap will look like.&lt;/p&gt;
+
+&lt;p&gt;I know there is already the official Bootstrap 4 docs that show all elements, but&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;They are dispatched into multiples pages, if you want to quickly see all the assets it takes too much time,&lt;/li&gt;
+  &lt;li&gt;Visual elements are blurred by &lt;em&gt;stuffs&lt;/em&gt;. Docs are here to show you everything, visual elements yes, but also code, explanations, warnings, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, here is &lt;a href=&quot;http://bdavidxyz.github.io/yourown-bootstrap4/all.html&quot;&gt;the whole page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Don’t expect a bunch of new spectacular visual components. There are some good new things of course, but the huge gap compared to Bootstrap 3 relies in the underlying code, which is now extremely easier and pleasant to use. This is the topic for another article I presume.&lt;/p&gt;
+
+&lt;p&gt;For Bootstrap 3 the job has been done many times, see &lt;a href=&quot;http://stackoverflow.com/questions/15233089/is-there-a-giant-asset-page-of-all-bootstrap-elements-that-i-can-re-style&quot;&gt;this Stackoverflow question&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are no comments (yet) on this website, maybe the next time :)&lt;/p&gt;
+
+&lt;p&gt;Enjoy !&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Jun 2016 00:00:00 +0200</pubDate>
+        <link>http://bdavidxyz.com/blog/what-bootstrap4-looks-like/</link>
+        <guid isPermaLink="true">http://bdavidxyz.com/blog/what-bootstrap4-looks-like/</guid>
+        
+        
+        <category>css</category>
+        
+      </item>
     
       <item>
         <title>How to name css classes</title>
