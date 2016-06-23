@@ -6,6 +6,7 @@ title:  "How to name css classes"
 date:   2016-05-18
 categories: css
 permalink: /blog/:title/
+description: "A collection of pragmatic tips, about css class naming, based on curation and work experience"
 ---
 
 
